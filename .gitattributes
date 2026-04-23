@@ -1,0 +1,14 @@
+# 所有文字檔強制使用 LF（for macOS/Linux scripts）
+* text=auto eol=lf
+
+# shell script 明確指定 LF
+*.sh    text eol=lf
+*.zsh   text eol=lf
+.zshrc  text eol=lf
+.zshenv text eol=lf
+.zprofile text eol=lf
+
+# 二進位檔不轉換
+*.itermcolors binary
+*.png   binary
+*.jpg   binary

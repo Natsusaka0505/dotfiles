@@ -1,0 +1,19 @@
+# ~/dotfiles/ssh/config
+# 注意：這個檔案只含 SSH client 行為設定，不含私鑰。可以安全 commit。
+# 私鑰（id_ed25519 等）絕對不要放進 repo。
+
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+
+# 如果有工作用的不同金鑰
+Host github-work
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_work

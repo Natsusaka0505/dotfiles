@@ -1,0 +1,16 @@
+# 備份檔（install.sh 的 link() 產生）
+*.bak
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+
+# p10k 實際設定由使用者生成後手動加回
+# （若想版控 p10k 設定，移除以下兩行）
+shell/zsh/.p10k.zsh

@@ -1,0 +1,37 @@
+# ~/dotfiles/git/.gitconfig
+# TODO: 換到新機器時把 [user] 的 name / email 改成自己的。
+
+[user]
+  name  = Your Name
+  email = you@example.com
+
+[core]
+  editor     = code --wait
+  excludesfile = ~/.gitignore_global
+  autocrlf   = input
+
+[init]
+  defaultBranch = main
+
+[pull]
+  rebase = false
+
+[push]
+  autoSetupRemote = true
+
+[alias]
+  st   = status
+  co   = checkout
+  br   = branch
+  lg   = log --oneline --graph --decorate --all
+  undo = reset HEAD~1 --mixed
+  save = stash push -m
+
+[color]
+  ui = auto
+
+[diff]
+  tool = vscode
+
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE

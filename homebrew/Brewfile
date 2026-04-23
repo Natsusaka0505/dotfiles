@@ -1,0 +1,40 @@
+# ~/dotfiles/homebrew/Brewfile
+# 使用方式：brew bundle --file=~/dotfiles/homebrew/Brewfile
+# 匯出目前狀態：brew bundle dump --file=~/dotfiles/homebrew/Brewfile --force
+
+# ── 基礎工具 ──────────────────────────────────────
+brew "git"
+brew "curl"
+brew "wget"
+brew "jq"              # JSON 處理
+brew "tree"
+
+# ── Shell 增強 ────────────────────────────────────
+brew "fzf"             # 模糊搜尋
+brew "zoxide"          # 智能 cd
+brew "eza"             # 更好的 ls
+brew "bat"             # 更好的 cat
+brew "ripgrep"         # 更快的 grep（rg）
+brew "fd"              # 更快的 find
+
+# ── 語言版本管理 ──────────────────────────────────
+brew "nvm"
+brew "pyenv"
+
+# ── 開發工具 ──────────────────────────────────────
+brew "docker"
+brew "gh"              # GitHub CLI
+
+# ── GUI 應用程式（Cask）──────────────────────────
+cask "iterm2"
+cask "visual-studio-code"
+cask "rectangle"
+cask "raycast"
+cask "docker"
+cask "tableplus"
+cask "1password"
+
+# ── 字體 ──────────────────────────────────────────
+tap "homebrew/cask-fonts"
+cask "font-meslo-lg-nerd-font"
+cask "font-jetbrains-mono-nerd-font"

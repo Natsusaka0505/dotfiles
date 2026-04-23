@@ -1,0 +1,25 @@
+# ~/dotfiles/git/.gitignore_global
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 環境變數（絕對不能 commit）
+.env
+.env.local
+.env.*.local
+
+# 依賴目錄
+node_modules/
+__pycache__/
+*.pyc
+.venv/
