@@ -8,3 +8,6 @@ elif [[ -x /usr/local/bin/brew ]]; then
   # Intel mac fallback
   eval "$(/usr/local/bin/brew shellenv)"
 fi
+
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"

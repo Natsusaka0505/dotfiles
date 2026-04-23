@@ -30,7 +30,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # ── 截圖 ──────────────────────────────────────────
 # 截圖存到 Downloads 而非 Desktop
-defaults write com.apple.screencapture location -string "$HOME/Downloads"
+# defaults write com.apple.screencapture location -string "$HOME/Downloads"
 # 截圖不含陰影
 defaults write com.apple.screencapture disable-shadow -bool true
 

@@ -5,6 +5,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~"
 alias dev="cd ~/Developer"
+alias desk="cd ~/Desktop"
 
 # ── ls 替換為 eza ──────────────────────────────────
 alias ls="eza --icons"
@@ -13,6 +14,9 @@ alias lt="eza --tree --icons -L 2"
 
 # ── cat 替換為 bat ─────────────────────────────────
 alias cat="bat"
+
+# ── cat 替換為 bat ─────────────────────────────────
+alias cls="clear"
 
 # ── Git 常用縮寫 ───────────────────────────────────
 alias g="git"
