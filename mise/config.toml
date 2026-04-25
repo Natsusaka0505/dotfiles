@@ -1,0 +1,16 @@
+# ~/dotfiles/mise/config.toml （symlink → ~/.config/mise/config.toml）
+# mise 全域設定。各專案可在自己的 repo 放 .mise.toml 覆寫這裡的版本。
+
+[tools]
+node   = "lts"
+python = "3.12"
+go     = "1.22"
+java   = "temurin-21"
+# flutter 不放 global：依賴 Android SDK / Xcode，建議 per-project 指定
+
+[settings]
+# flutter plugin 目前需要
+experimental = true
+
+# 相容既有專案的 .nvmrc / .python-version
+idiomatic_version_file_enable_tools = ["node", "python"]

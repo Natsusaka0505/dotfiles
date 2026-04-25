@@ -27,16 +27,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin:$PATH"
 # Homebrew（Apple Silicon）
 export PATH="/opt/homebrew/bin:$PATH"
+# Go：go install 安裝的 binary
+export PATH="$HOME/go/bin:$PATH"
 
-# ── 語言版本管理 ──────────────────────────────────
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# ── 語言版本管理（mise）────────────────────────────
+# 統一管 Node / Python / Go / Java / Flutter
+eval "$(mise activate zsh)"
 
 # ── Aliases ──────────────────────────────────────
 [[ -f $ZDOTDIR/aliases.zsh ]] && source $ZDOTDIR/aliases.zsh

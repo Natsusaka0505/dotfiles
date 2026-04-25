@@ -18,8 +18,7 @@ brew "ripgrep"         # 更快的 grep（rg）
 brew "fd"              # 更快的 find
 
 # ── 語言版本管理 ──────────────────────────────────
-brew "nvm"
-brew "pyenv"
+brew "mise"            # 統一管 Node / Python / Go / Java / Flutter
 
 # ── 開發工具 ──────────────────────────────────────
 brew "docker"

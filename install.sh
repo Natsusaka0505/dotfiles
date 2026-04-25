@@ -64,6 +64,9 @@ link "$DOTFILES/shell/zsh/.zshenv"         "$HOME/.zshenv"
 link "$DOTFILES/git/.gitconfig"            "$HOME/.gitconfig"
 link "$DOTFILES/git/.gitignore_global"     "$HOME/.gitignore_global"
 
+mkdir -p "$HOME/.config/mise"
+link "$DOTFILES/mise/config.toml"          "$HOME/.config/mise/config.toml"
+
 mkdir -p "$HOME/.ssh"
 link "$DOTFILES/ssh/config"                "$HOME/.ssh/config"
 chmod 700 "$HOME/.ssh"
